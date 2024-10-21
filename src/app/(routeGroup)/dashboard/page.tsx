@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function page() {
-  return <Container imgSrc={imgSrc} content="Dashboard" />;
+  return <Container imgSrc={imgSrc as unknown as string} content="Dashboard" />;
 }

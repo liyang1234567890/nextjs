@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import type StaticImageData from "next/image";
 
 type IProps = {
-  imgSrc: StaticImageData;
+  imgSrc: string;
   content: string;
 };
 export default function Container(props: IProps) {
