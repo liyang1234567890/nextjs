@@ -1,6 +1,8 @@
 "use Client";
 import type { Metadata } from "next";
-import Header from "@/components/Header";
+import "./globals.css";
+import { ADLaM_Display } from "next/font/google";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,9 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <Header />
-      {children}
-    </div>
+    <html lang="en">
+      <body>
+        <AntdRegistry>{children}</AntdRegistry>
+      </body>
+    </html>
   );
 }
