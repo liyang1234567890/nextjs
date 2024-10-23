@@ -3,7 +3,7 @@ import { Card } from "antd";
 import { data } from "../../data";
 
 // or Dynamic metadata
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params }: any) {
   return {
     title: `Blog Detail ${params.id}`,
   };
